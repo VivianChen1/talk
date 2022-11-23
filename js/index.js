@@ -38,6 +38,7 @@
   async function getMessage() {
     const resp = await API.getHistory();
     resp.data.map((item) => setChat(item));
+    scroll();
   }
 
   //将聊天记录变为html
